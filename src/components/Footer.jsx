@@ -1,6 +1,6 @@
 import React from "react";
 import { ChevronUp } from "lucide-react";
-import Logo from '../assets/logo.png';
+import Logo from '../assets//logo/logo white.png';
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
@@ -11,7 +11,7 @@ const Footer = () => {
             <img
                 src={Logo} 
                 alt="Sri Vishnu Package Logo"
-                className="h-10 w-10 object-contain gap-2"
+                className="h-16 w-16 object-contain gap-2"
                           />
             <h3 className="text-xl font-semibold mb-4">Sri Vishnu Package</h3>
             <p className="text-gray-400 mb-4">
@@ -52,8 +52,8 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Business Hours</h3>
             <ul className="text-gray-400 space-y-2">
-              <li>Monday - Friday: 9am - 6pm</li>
-              <li>Saturday: 9am - 3pm</li>
+              <li>Monday - Saturday: 9am - 6pm</li>
+              
               <li>Sunday: Closed</li>
             </ul>
           </div>

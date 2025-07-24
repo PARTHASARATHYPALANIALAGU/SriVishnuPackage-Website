@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import Logo from '../assets/logo.png';
+import Logo from '../assets//logo/logo black.png';
 
 
 const Navbar = () => {
@@ -29,7 +29,7 @@ const Navbar = () => {
     { name: "Machinery", href: "#machineries" },
     {name: "Tool", href: "#tool"},
     { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" },
+    
     
   ];
 

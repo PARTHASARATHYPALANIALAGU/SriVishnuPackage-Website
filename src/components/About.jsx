@@ -37,7 +37,7 @@ const About = () => {
           >
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1589792923962-537704632910?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                src="/src/assets/about.jpg"
                 alt="Sri Vishnu Package facility"
                 className="w-full h-full object-cover"
               />

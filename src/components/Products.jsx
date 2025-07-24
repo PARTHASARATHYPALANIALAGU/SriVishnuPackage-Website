@@ -7,25 +7,25 @@ const productsData = [
     id: 1,
     name: "Plain Boxes",
     description: "Simple, unbranded boxes ideal for basic packaging and shipping needs. Cost-effective and versatile.",
-    image: "https://images.pexels.com/photos/4498135/pexels-photo-4498135.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/src/assets/Products/plain box.jpg",
   },
   {
     id: 2,
     name: "Die-Cut Boxes",
     description: "Custom-shaped boxes cut to precise dimensions, perfect for fitting specific products securely and neatly.",
-    image: "https://plus.unsplash.com/premium_photo-1731478338555-3c3023318982?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FyZGJveCUyMG1hbnVmYWN0dXJlcnN8ZW58MHx8MHx8fDA%3D",
+    image: "/src/assets/Products/die cut box.jpg",
   },
   {
     id: 3,
     name: "Printed Boxes",
     description: "Boxes with branded designs, logos, or product info, enhancing presentation and customer experience.",
-    image: "https://images.unsplash.com/photo-1573875133384-07fe039214a4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHByaW50ZWQlMjBjYXJkYm9hcmRib3hlc3xlbnwwfHwwfHx8MA%3D%3D",
+    image: "/src/assets/Products/printed box.jpg",
   },
   {
     id: 4,
     name: "Fancy Boxes",
     description: "Premium packaging with decorative finishes, used for gifting, luxury products, or special occasions.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3pGIPCZWIgxjXMvjRbPUxsrsQyLk-VnQ9xA&s",
+    image: "/src/assets/Products/fancy box.jpeg",
   }
 ];
 

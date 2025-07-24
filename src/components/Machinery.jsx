@@ -7,25 +7,25 @@ const machinesData = [
     id: 1,
     title: "Corrugation Machine",
     description: "Produces corrugated sheets by bonding fluted and liner paper for packaging.",
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5dfO8bgxL29TFJP7zj6muY-fWXhBfrbAd2A&s",
+    src: "/src/assets/Machinery/corrugation.jpeg",
   },
   {
     id: 2,
     title: "Printer Slotter Machine",
     description: "Prints and cuts slots on corrugated sheets for box making.",
-    src: "https://img1.exportersindia.com/product_images/bc-full/2020/3/737233/water-based-flexo-printer-slotter-1585631999-5352167.jpeg",
+    src: "/src/assets/Machinery/printer slotter.jpeg",
   },
   {
     id: 3,
     title: "Die-Cutter",
     description: "Precision cutting of shapes with die tooling.",
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVX3XQHK9m01J7Yo3tHY9sHmlZfI95AZjPJA&s",
+    src: "/src/assets/Machinery/die cutter.jpeg",
   },
   {
   id: 4,
-  title: "Automatic Folder Gluer",
+  title: "Automatic Gluer",
   description: "Efficiently glues box flaps, ensuring strong, accurate joints for final carton formation.",
-  src: "https://2.wlimg.com/product_images/bc-full/dir_40/1191409/semi-automatic-folder-gluer-machine-850482.jpg",
+  src: "/src/assets/Machinery/auto gluer.jpg",
 }
 
 ];
