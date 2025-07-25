@@ -47,8 +47,7 @@ const Hero = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
           >
             <p className="text-xl text-gray-200 mb-10 max-w-3xl">
-              Sri Vishnu Package delivers high-quality, eco-friendly cardboard
-              packaging solutions that protect your products and our planet.
+                Sri Vishnu Package offers premium, eco-friendly packaging designed to safeguard your products while supporting a greener planet.
             </p>
           </motion.div>
 
