@@ -2,32 +2,37 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
+// ✅ Import images from src/assets/Machinery
+import corrugation from "../assets/Machinery/corrugation.jpeg";
+import printerSlotter from "../assets/Machinery/printer slotter.jpeg";
+import dieCutter from "../assets/Machinery/die cutter.jpeg";
+import autoGluer from "../assets/Machinery/auto gluer.jpg";
+
 const machinesData = [
   {
     id: 1,
     title: "Corrugation Machine",
     description: "Produces corrugated sheets by bonding fluted and liner paper for packaging.",
-    src: "/src/assets/Machinery/corrugation.jpeg",
+    src: corrugation,
   },
   {
     id: 2,
     title: "Printer Slotter Machine",
     description: "Prints and cuts slots on corrugated sheets for box making.",
-    src: "/src/assets/Machinery/printer slotter.jpeg",
+    src: printerSlotter,
   },
   {
     id: 3,
     title: "Die-Cutter",
     description: "Precision cutting of shapes with die tooling.",
-    src: "/src/assets/Machinery/die cutter.jpeg",
+    src: dieCutter,
   },
   {
-  id: 4,
-  title: "Automatic Gluer",
-  description: "Efficiently glues box flaps, ensuring strong, accurate joints for final carton formation.",
-  src: "/src/assets/Machinery/auto gluer.jpg",
-}
-
+    id: 4,
+    title: "Automatic Gluer",
+    description: "Efficiently glues box flaps, ensuring strong, accurate joints for final carton formation.",
+    src: autoGluer,
+  },
 ];
 
 const MachineCard = ({ machine, index }) => {
@@ -52,7 +57,9 @@ const MachineCard = ({ machine, index }) => {
         />
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-semibold text-gray-800 mb-2">{machine.title}</h3>
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          {machine.title}
+        </h3>
         <p className="text-gray-600">{machine.description}</p>
       </div>
     </motion.div>
@@ -79,12 +86,12 @@ export default function MachinesGallery() {
             Our Machinery
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We use state-of-the-art machinery to ensure your packaging is produced efficiently and precisely.
+            We use state-of-the-art machinery to ensure your packaging is
+            produced efficiently and precisely.
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-
           {machinesData.map((machine, index) => (
             <MachineCard key={machine.id} machine={machine} index={index} />
           ))}
