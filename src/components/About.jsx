@@ -3,6 +3,8 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 import CountUp from "react-countup";
+import aboutImage from "../assets/about.png";
+  
 const advantages = [
   "Sustainable and eco-friendly materials",
   "Custom designs for every business need",
@@ -39,10 +41,11 @@ const About = () => {
             
 <div className="rounded-lg overflow-hidden shadow-xl">
               <img
-                src="/src/assets/about.png"
-                alt="Sri Vishnu Package facility"
-                className="w-full h-full object-cover"
-              />
+  src={aboutImage}
+  alt="Sri Vishnu Package facility"
+  className="w-full h-full object-cover"
+/>
+
             </div>
 
             

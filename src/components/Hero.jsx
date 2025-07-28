@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import heroBg from "../assets/hero.png";
 
 const Hero = () => {
   return (
     <section id="home" className="relative pt-20 pb-40 overflow-hidden">
-      
       <motion.div
         className="absolute inset-0 z-0"
         initial={{ opacity: 0 }}
@@ -15,15 +15,13 @@ const Hero = () => {
         <div
           className="w-full h-full bg-center bg-cover"
           style={{
-            backgroundImage: `url("/src/assets/hero.png")`,
+            backgroundImage: `url(${heroBg})`,
           }}
         />
       </motion.div>
 
-     
       <div className="absolute inset-0 bg-black/60 z-0" />
 
-      
       <div className="section-container relative z-10 flex flex-col items-start text-left max-w-5xl px-6">
         <motion.div
           className="max-w-4xl"
@@ -47,7 +45,8 @@ const Hero = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
           >
             <p className="text-xl text-gray-200 mb-10 max-w-3xl">
-                Sri Vishnu Package offers premium, eco-friendly packaging designed to safeguard your products while supporting a greener planet.
+              Sri Vishnu Package offers premium, eco-friendly packaging designed
+              to safeguard your products while supporting a greener planet.
             </p>
           </motion.div>
 
@@ -64,11 +63,11 @@ const Hero = () => {
               Our Products
             </a>
             <a
-  href="#contact"
-  className="px-8 py-3 border border-white text-white rounded-lg font-medium bg-white/10 hover:bg-white/20 transition-colors duration-300"
->
-  Contact Us
-</a>
+              href="#contact"
+              className="px-8 py-3 border border-white text-white rounded-lg font-medium bg-white/10 hover:bg-white/20 transition-colors duration-300"
+            >
+              Contact Us
+            </a>
           </motion.div>
         </motion.div>
 

@@ -2,30 +2,40 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
+// ✅ Import each image directly
+import design from "../assets/Process/design.jpg";
+import production from "../assets/Process/production.jpeg";
+import quality from "../assets/Process/quality.jpeg";
+import delivery from "../assets/Process/delivery.jpg";
+
 const processSteps = [
   {
     id: 1,
     title: "Design",
-    description: "Our team works with you to create custom packaging designs that meet your specific requirements.",
-    icon: "/src/assets/Process/design.jpg",
+    description:
+      "Our team works with you to create custom packaging designs that meet your specific requirements.",
+    icon: design,
   },
   {
     id: 2,
     title: "Production",
-    description: "Using advanced machinery and quality materials, we manufacture your packaging with precision.",
-    icon: "/src/assets/Process/production.jpeg",
+    description:
+      "Using advanced machinery and quality materials, we manufacture your packaging with precision.",
+    icon: production,
   },
   {
     id: 3,
     title: "Quality Control",
-    description: "Every product undergoes rigorous testing to ensure it meets our high standards.",
-    icon: "/src/assets/Process/quality.jpeg",
+    description:
+      "Every product undergoes rigorous testing to ensure it meets our high standards.",
+    icon: quality,
   },
   {
     id: 4,
     title: "Delivery",
-    description: "We ensure timely delivery of your packaging solutions directly to your specified location.",
-    icon: "/src/assets/Process/delivery.jpg",
+    description:
+      "We ensure timely delivery of your packaging solutions directly to your specified location.",
+    icon: delivery,
   },
 ];
 
@@ -45,9 +55,9 @@ const ProcessStep = ({ step, index }) => {
     >
       <div className="relative mb-6">
         <div className="h-52 w-52 overflow-hidden rounded-full border-4 border-primary-100">
-          <img 
-            src={step.icon} 
-            alt={step.title} 
+          <img
+            src={step.icon}
+            alt={step.title}
             className="w-full h-full object-cover"
           />
         </div>
@@ -55,7 +65,7 @@ const ProcessStep = ({ step, index }) => {
           {index + 1}
         </div>
       </div>
-      
+
       <h3 className="text-xl font-semibold mb-2 text-gray-800">{step.title}</h3>
       <p className="text-center text-gray-600 max-w-xs">{step.description}</p>
     </motion.div>
@@ -82,7 +92,8 @@ const Process = () => {
             Our Manufacturing Process
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Quality and precision at every step of our cardboard manufacturing process.
+            Quality and precision at every step of our cardboard manufacturing
+            process.
           </p>
         </motion.div>
 

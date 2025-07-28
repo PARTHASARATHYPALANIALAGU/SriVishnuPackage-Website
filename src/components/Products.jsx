@@ -2,32 +2,38 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
+import plainBox from "../assets/Products/plain box.jpg";
+import dieCutBox from "../assets/Products/die cut box.jpg";
+import printedBox from "../assets/Products/printed box.jpg";
+import fancyBox from "../assets/Products/fancy box.jpeg";
+
 const productsData = [
   {
     id: 1,
     name: "Plain Boxes",
     description: "Simple, unbranded boxes ideal for basic packaging and shipping needs. Cost-effective and versatile.",
-    image: "/src/assets/Products/plain box.jpg",
+    image: plainBox,
   },
   {
     id: 2,
     name: "Die-Cut Boxes",
     description: "Custom-shaped boxes cut to precise dimensions, perfect for fitting specific products securely and neatly.",
-    image: "/src/assets/Products/die cut box.jpg",
+    image: dieCutBox,
   },
   {
     id: 3,
     name: "Printed Boxes",
     description: "Boxes with branded designs, logos, or product info, enhancing presentation and customer experience.",
-    image: "/src/assets/Products/printed box.jpg",
+    image: printedBox,
   },
   {
     id: 4,
     name: "Fancy Boxes",
     description: "Premium packaging with decorative finishes, used for gifting, luxury products, or special occasions.",
-    image: "/src/assets/Products/fancy box.jpeg",
+    image: fancyBox,
   }
 ];
+
 
 const ProductCard = ({ product, index }) => {
   const [ref, inView] = useInView({
